@@ -1,0 +1,581 @@
+!!!
+%html.no-js{lang: "zxx"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %title About | Bookshop Responsive Bootstrap4 Template
+    %meta{content: "", name: "description"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    / Favicons
+    %link{href: "/assets/images/favicon.ico", rel: "shortcut icon"}/
+    %link{href: "/assets/images/icon.png", rel: "apple-touch-icon"}/
+    / Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy)
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,600i,700,700i,800", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900", rel: "stylesheet"}/
+    / Stylesheets
+    %link{href: "/assets/css/bootstrap.min.css", rel: "stylesheet"}/
+    %link{href: "/assets/css/plugins.css", rel: "stylesheet"}/
+    %link{href: "/assets/css/style.css", rel: "stylesheet"}/
+    / Cusom css
+    %link{href: "/assets/css/custom.css", rel: "stylesheet"}/
+    / Modernizer js
+    %script{src: "/assets/js/vendor/modernizr-3.5.0.min.js"}
+  %body
+    /[if lte IE 9]
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    / Main wrapper
+    #wrapper.wrapper
+      / Header
+      %header#wn__header.oth-page.header__area.header__absolute.sticky__header
+        .container-fluid
+          .row
+            .col-md-4.col-sm-4.col-7.col-lg-2
+              .logo
+                %a{href: "index"}
+                  %img{alt: "logo images", src: "/assets/images/logo/logo.png"}/
+            .col-lg-8.d-none.d-lg-block
+              %nav.mainmenu__nav
+                %ul.meninmenu.d-flex.justify-content-start
+                  %li.drop.with--one--item
+                    %a{href: "index"} Home
+                  %li.drop
+                    %a{href: "#"} Shop
+                    .megamenu.mega03
+                      %ul.item.item03
+                        %li.title Shop Layout
+                        %li
+                          %a{href: "shop-grid"} Shop Grid
+                        %li
+                          %a{href: "single-product"} Single Product
+                      %ul.item.item03
+                        %li.title Shop Page
+                        %li
+                          %a{href: "my-account"} My Account
+                        %li
+                          %a{href: "cart"} Cart Page
+                        %li
+                          %a{href: "checkout"} Checkout Page
+                        %li
+                          %a{href: "wishlist"} Wishlist Page
+                        %li
+                          %a{href: "error404"} 404 Page
+                        %li
+                          %a{href: "faq"} Faq Page
+                      %ul.item.item03
+                        %li.title Bargain Books
+                        %li
+                          %a{href: "shop-grid"} Bargain Bestsellers
+                        %li
+                          %a{href: "shop-grid"} Activity Kits
+                        %li
+                          %a{href: "shop-grid"} B&amp;N Classics
+                        %li
+                          %a{href: "shop-grid"} Books Under $5
+                        %li
+                          %a{href: "shop-grid"} Bargain Books
+                  %li.drop
+                    %a{href: "shop-grid"} Books
+                    .megamenu.mega03
+                      %ul.item.item03
+                        %li.title Categories
+                        %li
+                          %a{href: "shop-grid"} Biography
+                        %li
+                          %a{href: "shop-grid"} Business
+                        %li
+                          %a{href: "shop-grid"} Cookbooks
+                        %li
+                          %a{href: "shop-grid"} Health &amp; Fitness
+                        %li
+                          %a{href: "shop-grid"} History
+                      %ul.item.item03
+                        %li.title Customer Favourite
+                        %li
+                          %a{href: "shop-grid"} Mystery
+                        %li
+                          %a{href: "shop-grid"} Religion &amp; Inspiration
+                        %li
+                          %a{href: "shop-grid"} Romance
+                        %li
+                          %a{href: "shop-grid"} Fiction/Fantasy
+                        %li
+                          %a{href: "shop-grid"} Sleeveless
+                      %ul.item.item03
+                        %li.title Collections
+                        %li
+                          %a{href: "shop-grid"} Science
+                        %li
+                          %a{href: "shop-grid"} Fiction/Fantasy
+                        %li
+                          %a{href: "shop-grid"} Self-Improvemen
+                        %li
+                          %a{href: "shop-grid"} Home &amp; Garden
+                        %li
+                          %a{href: "shop-grid"} Humor Books
+                  %li.drop
+                    %a{href: "shop-grid"} Kids
+                    .megamenu.mega02
+                      %ul.item.item02
+                        %li.title Top Collections
+                        %li
+                          %a{href: "shop-grid"} American Girl
+                        %li
+                          %a{href: "shop-grid"} Diary Wimpy Kid
+                        %li
+                          %a{href: "shop-grid"} Finding Dory
+                        %li
+                          %a{href: "shop-grid"} Harry Potter
+                        %li
+                          %a{href: "shop-grid"} Land of Stories
+                      %ul.item.item02
+                        %li.title More For Kids
+                        %li
+                          %a{href: "shop-grid"} B&amp;N Educators
+                        %li
+                          %a{href: "shop-grid"} B&amp;N Kids' Club
+                        %li
+                          %a{href: "shop-grid"} Kids' Music
+                        %li
+                          %a{href: "shop-grid"} Toys &amp; Games
+                        %li
+                          %a{href: "shop-grid"} Hoodies
+                  %li.drop
+                    %a{href: "#"} Pages
+                    .megamenu.dropdown
+                      %ul.item.item01
+                        %li
+                          %a{href: "about"} About Page
+                        %li.label2
+                          %a{href: "portfolio"} Portfolio
+                          %ul
+                            %li
+                              %a{href: "portfolio"} Portfolio
+                            %li
+                              %a{href: "portfolio-details"} Portfolio Details
+                        %li
+                          %a{href: "my-account"} My Account
+                        %li
+                          %a{href: "cart"} Cart Page
+                        %li
+                          %a{href: "checkout"} Checkout Page
+                        %li
+                          %a{href: "wishlist"} Wishlist Page
+                        %li
+                          %a{href: "error404"} 404 Page
+                        %li
+                          %a{href: "faq"} Faq Page
+                        %li
+                          %a{href: "team"} Team Page
+                  %li.drop
+                    %a{href: "blog"} Blog
+                    .megamenu.dropdown
+                      %ul.item.item01
+                        %li
+                          %a{href: "blog"} Blog Page
+                        %li
+                          %a{href: "blog-details"} Blog Details
+                  %li
+                    %a{href: "contact"} Contact
+            .col-md-8.col-sm-8.col-5.col-lg-2
+              %ul.header__sidebar__right.d-flex.justify-content-end.align-items-center
+                %li.shop_search
+                  %a.search__active{href: "#"}
+                %li.wishlist
+                  %a{href: "#"}
+                %li.shopcart
+                  %a.cartbox_active{href: "#"}
+                    %span.product_qun 3
+                  / Start Shopping Cart
+                  .block-minicart.minicart__active
+                    .minicart-content-wrapper
+                      .micart__close
+                        %span close
+                      .items-total.d-flex.justify-content-between
+                        %span 3 items
+                        %span Cart Subtotal
+                      .total_amount.text-right
+                        %span $66.00
+                      .mini_action.checkout
+                        %a.checkout__btn{href: "cart"} Go to Checkout
+                      .single__items
+                        .miniproduct
+                          .item01.d-flex
+                            .thumb
+                              %a{href: "product-details"}
+                                %img{alt: "product images", src: "/assets/images/product/sm-img/1.jpg"}/
+                            .content
+                              %h6
+                                %a{href: "product-details"} Voyage Yoga Bag
+                              %span.prize $30.00
+                              .product_prize.d-flex.justify-content-between
+                                %span.qun Qty: 01
+                                %ul.d-flex.justify-content-end
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-settings
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-delete
+                          .item01.d-flex.mt--20
+                            .thumb
+                              %a{href: "product-details"}
+                                %img{alt: "product images", src: "/assets/images/product/sm-img/3.jpg"}/
+                            .content
+                              %h6
+                                %a{href: "product-details"} Impulse Duffle
+                              %span.prize $40.00
+                              .product_prize.d-flex.justify-content-between
+                                %span.qun Qty: 03
+                                %ul.d-flex.justify-content-end
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-settings
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-delete
+                          .item01.d-flex.mt--20
+                            .thumb
+                              %a{href: "product-details"}
+                                %img{alt: "product images", src: "/assets/images/product/sm-img/2.jpg"}/
+                            .content
+                              %h6
+                                %a{href: "product-details"} Compete Track Tote
+                              %span.prize $40.00
+                              .product_prize.d-flex.justify-content-between
+                                %span.qun Qty: 03
+                                %ul.d-flex.justify-content-end
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-settings
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-delete
+                      .mini_action.cart
+                        %a.cart__btn{href: "cart"} View and edit cart
+                  / End Shopping Cart
+                %li.setting__bar__icon
+                  %a.setting__active{href: "#"}
+                  .searchbar__content.setting__block
+                    .content-inner
+                      .switcher-currency
+                        %strong.label.switcher-label
+                          %span Currency
+                        .switcher-options
+                          .switcher-currency-trigger
+                            %span.currency-trigger USD - US Dollar
+                            %ul.switcher-dropdown
+                              %li GBP - British Pound Sterling
+                              %li EUR - Euro
+                      .switcher-currency
+                        %strong.label.switcher-label
+                          %span Language
+                        .switcher-options
+                          .switcher-currency-trigger
+                            %span.currency-trigger English01
+                            %ul.switcher-dropdown
+                              %li English02
+                              %li English03
+                              %li English04
+                              %li English05
+                      .switcher-currency
+                        %strong.label.switcher-label
+                          %span Select Store
+                        .switcher-options
+                          .switcher-currency-trigger
+                            %span.currency-trigger Fashion Store
+                            %ul.switcher-dropdown
+                              %li Furniture
+                              %li Shoes
+                              %li Speaker Store
+                              %li Furniture
+                      .switcher-currency
+                        %strong.label.switcher-label
+                          %span My Account
+                        .switcher-options
+                          .switcher-currency-trigger
+                            .setting__menu
+                              %span
+                                %a{href: "#"} Compare Product
+                              %span
+                                %a{href: "#"} My Account
+                              %span
+                                %a{href: "#"} My Wishlist
+                              %span
+                                %a{href: "#"} Sign In
+                              %span
+                                %a{href: "#"} Create An Account
+          / Start Mobile Menu
+          .row.d-none
+            .col-lg-12.d-none
+              %nav.mobilemenu__nav
+                %ul.meninmenu
+                  %li
+                    %a{href: "index"} Home
+                  %li
+                    %a{href: "#"} Pages
+                    %ul
+                      %li
+                        %a{href: "about"} About Page
+                      %li
+                        %a{href: "portfolio"} Portfolio
+                        %ul
+                          %li
+                            %a{href: "portfolio"} Portfolio
+                          %li
+                            %a{href: "portfolio-details"} Portfolio Details
+                      %li
+                        %a{href: "my-account"} My Account
+                      %li
+                        %a{href: "cart"} Cart Page
+                      %li
+                        %a{href: "checkout"} Checkout Page
+                      %li
+                        %a{href: "wishlist"} Wishlist Page
+                      %li
+                        %a{href: "error404"} 404 Page
+                      %li
+                        %a{href: "faq"} Faq Page
+                      %li
+                        %a{href: "team"} Team Page
+                  %li
+                    %a{href: "shop-grid"} Shop
+                    %ul
+                      %li
+                        %a{href: "shop-grid"} Shop Grid
+                      %li
+                        %a{href: "single-product"} Single Product
+                  %li
+                    %a{href: "blog"} Blog
+                    %ul
+                      %li
+                        %a{href: "blog"} Blog Page
+                      %li
+                        %a{href: "blog-details"} Blog Details
+                  %li
+                    %a{href: "contact"} Contact
+          / End Mobile Menu
+          .mobile-menu.d-block.d-lg-none
+          / Mobile Menu
+      / //Header
+      / Start Search Popup
+      .box-search-content.search_active.block-bg.close__top
+        %form#search_mini_form.minisearch{action: "#"}
+          .field__search
+            %input{placeholder: "Search entire store here...", type: "text"}/
+            .action
+              %a{href: "#"}
+                %i.zmdi.zmdi-search
+        .close__wrap
+          %span close
+      / End Search Popup
+      / Start Bradcaump area
+      .ht__bradcaump__area.bg-image--3
+        .container
+          .row
+            .col-lg-12
+              .bradcaump__inner.text-center
+                %h2.bradcaump-title About us
+                %nav.bradcaump-content
+                  %a.breadcrumb_item{href: "index"} Home
+                  %span.brd-separetor /
+                  %span.breadcrumb_item.active About us
+      / End Bradcaump area
+      / Start About Area
+      .page-about.about_area.bg--white.section-padding--lg
+        .container
+          .row
+            .col-lg-12
+              .section__title--3.text-center.pb--30
+                %h2 Our Process Skill Of High
+                %p the right people for your project
+          .row.align-items-center
+            .col-lg-6.col-sm-12.col-12
+              .content.text-left.text_style--2
+                %h2 we have skills to show
+                .skill-container
+                  / Start single skill
+                  .single-skill
+                    %p Customer Favorites
+                    .progress
+                      .progress-bar.wow.fadeInLeft{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "90", "data-wow-delay" => ".5s", "data-wow-duration" => "0.8s", role: "progressbar", style: "width:90%"}
+                        %span.pen-lable
+                  / End single skill
+                  / Start single skill
+                  .single-skill
+                    %p Popular Authors
+                    .progress
+                      .progress-bar.wow.fadeInLeft{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "95", "data-wow-delay" => ".5s", "data-wow-duration" => "0.8s", role: "progressbar", style: "width:95%"}
+                        %span.pen-lable
+                  / End single skill
+                  / Start single skill
+                  .single-skill
+                    %p Bestselling Series
+                    .progress
+                      .progress-bar.wow.fadeInLeft{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "93", "data-wow-delay" => ".5s", "data-wow-duration" => "0.8s", role: "progressbar", style: "width:93%"}
+                        %span.pen-lable
+                  / End single skill
+                  / Start single skill
+                  .single-skill
+                    %p Bargain Books
+                    .progress
+                      .progress-bar.wow.fadeInLeft{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "90", "data-wow-delay" => ".5s", "data-wow-duration" => "0.8s", role: "progressbar", style: "width:90%"}
+                        %span.pen-lable
+                  / End single skill
+            .col-lg-6.col-sm-12.col-12
+              .content
+                %h3 Buy Book
+                %h2 Different Knowledge
+                %p.mt--20.mb--20 Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+                %strong London Address
+                %p 34 Parer Place via Musk Avenue Kelvin Grove, QLD, 4059
+      / End About Area
+      / Start Team Area
+      %section.wn__team__area.pb--75.bg--white
+        .container
+          .row
+            .col-lg-12
+              .section__title--3.text-center
+                %h2 Meet our team of experts
+                %p the right people for your project
+          .row
+            / Start Single Team
+            .col-lg-4.col-md-4.col-sm-6.col-12
+              .wn__team
+                .thumb
+                  %img{alt: "Team images", src: "/assets/images/about/team/1.jpg"}/
+                .content.text-center
+                  %h4 JOHN SMITH
+                  %p Manager
+                  %ul.team__social__net
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-twitter.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-tumblr.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-facebook.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-linkedin.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-pinterest.icons
+            / End Single Team
+            / Start Single Team
+            .col-lg-4.col-md-4.col-sm-6.col-12
+              .wn__team
+                .thumb
+                  %img{alt: "Team images", src: "/assets/images/about/team/2.jpg"}/
+                .content.text-center
+                  %h4 ALICE KIM
+                  %p Co-Founder
+                  %ul.team__social__net
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-twitter.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-tumblr.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-facebook.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-linkedin.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-pinterest.icons
+            / End Single Team
+            / Start Single Team
+            .col-lg-4.col-md-4.col-sm-6.col-12
+              .wn__team
+                .thumb
+                  %img{alt: "Team images", src: "/assets/images/about/team/3.jpg"}/
+                .content.text-center
+                  %h4 VICTORIA DOE
+                  %p Marketer
+                  %ul.team__social__net
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-twitter.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-tumblr.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-facebook.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-linkedin.icons
+                    %li
+                      %a{href: "#"}
+                        %i.icon-social-pinterest.icons
+            / End Single Team
+      / End Team Area
+      / Footer Area
+      %footer#wn__footer.footer__area.bg__cat--8.brown--color
+        .footer-static-top
+          .container
+            .row
+              .col-lg-12
+                .footer__widget.footer__menu
+                  .ft__logo
+                    %a{href: "index"}
+                      %img{alt: "logo", src: "/assets/images/logo/3.png"}/
+                    %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered duskam alteration variations of passages
+                  .footer__content
+                    %ul.social__net.social__net--2.d-flex.justify-content-center
+                      %li
+                        %a{href: "#"}
+                          %i.bi.bi-facebook
+                      %li
+                        %a{href: "#"}
+                          %i.bi.bi-google
+                      %li
+                        %a{href: "#"}
+                          %i.bi.bi-twitter
+                      %li
+                        %a{href: "#"}
+                          %i.bi.bi-linkedin
+                      %li
+                        %a{href: "#"}
+                          %i.bi.bi-youtube
+                    %ul.mainmenu.d-flex.justify-content-center
+                      %li
+                        %a{href: "index"} Trending
+                      %li
+                        %a{href: "index"} Best Seller
+                      %li
+                        %a{href: "index"} All Product
+                      %li
+                        %a{href: "index"} Wishlist
+                      %li
+                        %a{href: "index"} Blog
+                      %li
+                        %a{href: "index"} Contact
+        .copyright__wrapper
+          .container
+            .row
+              .col-lg-6.col-md-6.col-sm-12
+                .copyright
+                  .copy__right__inner.text-left
+                    %p
+                      Copyright
+                      %i.fa.fa-copyright
+                      %a{href: "https://freethemescloud.com/"} Free themes Cloud.
+                      All Rights Reserved
+              .col-lg-6.col-md-6.col-sm-12
+                .payment.text-right
+                  %img{alt: "", src: "/assets/images/icons/payment.png"}/
+      / //Footer Area
+    / //Main wrapper
+    / JS Files
+    %script{src: "/assets/js/vendor/jquery-3.2.1.min.js"}
+    %script{src: "/assets/js/popper.min.js"}
+    %script{src: "/assets/js/bootstrap.min.js"}
+    %script{src: "/assets/js/plugins.js"}
+    %script{src: "/assets/js/active.js"}

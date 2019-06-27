@@ -1,0 +1,3462 @@
+!!!
+%html.no-js{lang: "zxx"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %title Home | Bookshop Responsive Bootstrap4 Template
+    %meta{content: "", name: "description"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    / Favicons
+    %link{href: "/assets/images/favicon.ico", rel: "shortcut icon"}/
+    %link{href: "/assets/images/icon.png", rel: "apple-touch-icon"}/
+    / Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy)
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,600i,700,700i,800", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900", rel: "stylesheet"}/
+    / Stylesheets
+    %link{href: "/assets/css/bootstrap.min.css", rel: "stylesheet"}/
+    %link{href: "/assets/css/plugins.css", rel: "stylesheet"}/
+    %link{href: "/assets/css/style.css", rel: "stylesheet"}/
+    / Cusom css
+    %link{href: "/assets/css/custom.css", rel: "stylesheet"}/
+    / Modernizer js
+    %script{src: "/assets/js/vendor/modernizr-3.5.0.min.js"}
+  %body
+    /[if lte IE 9]
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    / Main wrapper
+    #wrapper.wrapper
+      / Header
+      %header#wn__header.header__area.header__absolute.sticky__header
+        .container-fluid
+          .row
+            .col-md-6.col-sm-6.col-6.col-lg-2
+              .logo
+                %a{href: "index"}
+                  %img{alt: "logo images", src: "/assets/images/logo/logo.png"}/
+            .col-lg-8.d-none.d-lg-block
+              %nav.mainmenu__nav
+                %ul.meninmenu.d-flex.justify-content-start
+                  %li.drop.with--one--item
+                    %a{href: "index"} Home
+                  %li.drop
+                    %a{href: "#"} Shop
+                    .megamenu.mega03
+                      %ul.item.item03
+                        %li.title Shop Layout
+                        %li
+                          %a{href: "shop_grid"} Shop Grid
+                        %li
+                          %a{href: "single_product"} Single Product
+                      %ul.item.item03
+                        %li.title Shop Page
+                        %li
+                          %a{href: "my_account"} My Account
+                        %li
+                          %a{href: "cart"} Cart Page
+                        %li
+                          %a{href: "checkout"} Checkout Page
+                        %li
+                          %a{href: "wishlist"} Wishlist Page
+                        %li
+                          %a{href: "error404"} 404 Page
+                        %li
+                          %a{href: "faq"} Faq Page
+                      %ul.item.item03
+                        %li.title Bargain Books
+                        %li
+                          %a{href: "shop_grid"} Bargain Bestsellers
+                        %li
+                          %a{href: "shop_grid"} Activity Kits
+                        %li
+                          %a{href: "shop_grid"} B&amp;N Classics
+                        %li
+                          %a{href: "shop_grid"} Books Under $5
+                        %li
+                          %a{href: "shop_grid"} Bargain Books
+                  %li.drop
+                    %a{href: "shop_grid"} Books
+                    .megamenu.mega03
+                      %ul.item.item03
+                        %li.title Categories
+                        %li
+                          %a{href: "shop_grid"} Biography
+                        %li
+                          %a{href: "shop_grid"} Business
+                        %li
+                          %a{href: "shop_grid"} Cookbooks
+                        %li
+                          %a{href: "shop_grid"} Health &amp; Fitness
+                        %li
+                          %a{href: "shop_grid"} History
+                      %ul.item.item03
+                        %li.title Customer Favourite
+                        %li
+                          %a{href: "shop_grid"} Mystery
+                        %li
+                          %a{href: "shop_grid"} Religion &amp; Inspiration
+                        %li
+                          %a{href: "shop_grid"} Romance
+                        %li
+                          %a{href: "shop_grid"} Fiction/Fantasy
+                        %li
+                          %a{href: "shop_grid"} Sleeveless
+                      %ul.item.item03
+                        %li.title Collections
+                        %li
+                          %a{href: "shop_grid"} Science
+                        %li
+                          %a{href: "shop_grid"} Fiction/Fantasy
+                        %li
+                          %a{href: "shop_grid"} Self-Improvemen
+                        %li
+                          %a{href: "shop_grid"} Home &amp; Garden
+                        %li
+                          %a{href: "shop_grid"} Humor Books
+                  %li.drop
+                    %a{href: "shop_grid"} Kids
+                    .megamenu.mega02
+                      %ul.item.item02
+                        %li.title Top Collections
+                        %li
+                          %a{href: "shop_grid"} American Girl
+                        %li
+                          %a{href: "shop_grid"} Diary Wimpy Kid
+                        %li
+                          %a{href: "shop_grid"} Finding Dory
+                        %li
+                          %a{href: "shop_grid"} Harry Potter
+                        %li
+                          %a{href: "shop_grid"} Land of Stories
+                      %ul.item.item02
+                        %li.title More For Kids
+                        %li
+                          %a{href: "shop_grid"} B&amp;N Educators
+                        %li
+                          %a{href: "shop_grid"} B&amp;N Kids' Club
+                        %li
+                          %a{href: "shop_grid"} Kids' Music
+                        %li
+                          %a{href: "shop_grid"} Toys &amp; Games
+                        %li
+                          %a{href: "shop_grid"} Hoodies
+                  %li.drop
+                    %a{href: "#"} Pages
+                    .megamenu.dropdown
+                      %ul.item.item01
+                        %li
+                          %a{href: "about"} About Page
+                        %li.label2
+                          %a{href: "portfolio"} Portfolio
+                          %ul
+                            %li
+                              %a{href: "portfolio"} Portfolio
+                            %li
+                              %a{href: "portfolio_details"} Portfolio Details
+                        %li
+                          %a{href: "my_account"} My Account
+                        %li
+                          %a{href: "cart"} Cart Page
+                        %li
+                          %a{href: "checkout"} Checkout Page
+                        %li
+                          %a{href: "wishlist"} Wishlist Page
+                        %li
+                          %a{href: "error404"} 404 Page
+                        %li
+                          %a{href: "faq"} Faq Page
+                        %li
+                          %a{href: "team"} Team Page
+                  %li.drop
+                    %a{href: "blog"} Blog
+                    .megamenu.dropdown
+                      %ul.item.item01
+                        %li
+                          %a{href: "blog"} Blog Page
+                        %li
+                          %a{href: "blog_details"} Blog Details
+                  %li
+                    %a{href: "contact"} Contact
+            .col-md-6.col-sm-6.col-6.col-lg-2
+              %ul.header__sidebar__right.d-flex.justify-content-end.align-items-center
+                %li.shop_search
+                  %a.search__active{href: "#"}
+                %li.wishlist
+                  %a{href: "#"}
+                %li.shopcart
+                  %a.cartbox_active{href: "#"}
+                    %span.product_qun 3
+                  / Start Shopping Cart
+                  .block-minicart.minicart__active
+                    .minicart-content-wrapper
+                      .micart__close
+                        %span close
+                      .items-total.d-flex.justify-content-between
+                        %span 3 items
+                        %span Cart Subtotal
+                      .total_amount.text-right
+                        %span $66.00
+                      .mini_action.checkout
+                        %a.checkout__btn{href: "cart"} Go to Checkout
+                      .single__items
+                        .miniproduct
+                          .item01.d-flex
+                            .thumb
+                              %a{href: "product_details"}
+                                %img{alt: "product images", src: "/assets/images/product/sm-img/1.jpg"}/
+                            .content
+                              %h6
+                                %a{href: "product_details"} Voyage Yoga Bag
+                              %span.prize $30.00
+                              .product_prize.d-flex.justify-content-between
+                                %span.qun Qty: 01
+                                %ul.d-flex.justify-content-end
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-settings
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-delete
+                          .item01.d-flex.mt--20
+                            .thumb
+                              %a{href: "product_details"}
+                                %img{alt: "product images", src: "/assets/images/product/sm-img/3.jpg"}/
+                            .content
+                              %h6
+                                %a{href: "product_details"} Impulse Duffle
+                              %span.prize $40.00
+                              .product_prize.d-flex.justify-content-between
+                                %span.qun Qty: 03
+                                %ul.d-flex.justify-content-end
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-settings
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-delete
+                          .item01.d-flex.mt--20
+                            .thumb
+                              %a{href: "product_details"}
+                                %img{alt: "product images", src: "/assets/images/product/sm-img/2.jpg"}/
+                            .content
+                              %h6
+                                %a{href: "product_details"} Compete Track Tote
+                              %span.prize $40.00
+                              .product_prize.d-flex.justify-content-between
+                                %span.qun Qty: 03
+                                %ul.d-flex.justify-content-end
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-settings
+                                  %li
+                                    %a{href: "#"}
+                                      %i.zmdi.zmdi-delete
+                      .mini_action.cart
+                        %a.cart__btn{href: "cart"} View and edit cart
+                  / End Shopping Cart
+                %li.setting__bar__icon
+                  %a.setting__active{href: "#"}
+                  .searchbar__content.setting__block
+                    .content-inner
+                      .switcher-currency
+                        %strong.label.switcher-label
+                          %span Currency
+                        .switcher-options
+                          .switcher-currency-trigger
+                            %span.currency-trigger USD - US Dollar
+                            %ul.switcher-dropdown
+                              %li GBP - British Pound Sterling
+                              %li EUR - Euro
+                      .switcher-currency
+                        %strong.label.switcher-label
+                          %span Language
+                        .switcher-options
+                          .switcher-currency-trigger
+                            %span.currency-trigger English01
+                            %ul.switcher-dropdown
+                              %li English02
+                              %li English03
+                              %li English04
+                              %li English05
+                      .switcher-currency
+                        %strong.label.switcher-label
+                          %span Select Store
+                        .switcher-options
+                          .switcher-currency-trigger
+                            %span.currency-trigger Fashion Store
+                            %ul.switcher-dropdown
+                              %li Furniture
+                              %li Shoes
+                              %li Speaker Store
+                              %li Furniture
+                      .switcher-currency
+                        %strong.label.switcher-label
+                          %span My Account
+                        .switcher-options
+                          .switcher-currency-trigger
+                            .setting__menu
+                              %span
+                                %a{href: "#"} Compare Product
+                              %span
+                                %a{href: "#"} My Account
+                              %span
+                                %a{href: "#"} My Wishlist
+                              %span
+                                %a{href: "#"} Sign In
+                              %span
+                                %a{href: "#"} Create An Account
+          / Start Mobile Menu
+          .row.d-none
+            .col-lg-12.d-none
+              %nav.mobilemenu__nav
+                %ul.meninmenu
+                  %li
+                    %a{href: "index"} Home
+                  %li
+                    %a{href: "#"} Pages
+                    %ul
+                      %li
+                        %a{href: "about"} About Page
+                      %li
+                        %a{href: "portfolio"} Portfolio
+                        %ul
+                          %li
+                            %a{href: "portfolio"} Portfolio
+                          %li
+                            %a{href: "portfolio_details"} Portfolio Details
+                      %li
+                        %a{href: "my_account"} My Account
+                      %li
+                        %a{href: "cart"} Cart Page
+                      %li
+                        %a{href: "checkout"} Checkout Page
+                      %li
+                        %a{href: "wishlist"} Wishlist Page
+                      %li
+                        %a{href: "error404"} 404 Page
+                      %li
+                        %a{href: "faq"} Faq Page
+                      %li
+                        %a{href: "team"} Team Page
+                  %li
+                    %a{href: "shop_grid"} Shop
+                    %ul
+                      %li
+                        %a{href: "shop_grid"} Shop Grid
+                      %li
+                        %a{href: "single_product"} Single Product
+                  %li
+                    %a{href: "blog"} Blog
+                    %ul
+                      %li
+                        %a{href: "blog"} Blog Page
+                      %li
+                        %a{href: "blog_details"} Blog Details
+                  %li
+                    %a{href: "contact"} Contact
+          / End Mobile Menu
+          .mobile-menu.d-block.d-lg-none
+          / Mobile Menu
+      / //Header
+      / Start Search Popup
+      .brown--color.box-search-content.search_active.block-bg.close__top
+        %form#search_mini_form.minisearch{action: "#"}
+          .field__search
+            %input{placeholder: "Search entire store here...", type: "text"}/
+            .action
+              %a{href: "#"}
+                %i.zmdi.zmdi-search
+        .close__wrap
+          %span close
+      / End Search Popup
+      / Start Slider area
+      .slider-area.brown__nav.slider--15.slide__activation.slide__arrow01.owl-carousel.owl-theme
+        / Start Single Slide
+        .slide.animation__style10.bg-image--1.fullscreen.align__center--left
+          .container
+            .row
+              .col-lg-12
+                .slider__content
+                  .contentbox
+                    %h2
+                      Buy
+                      %span your
+                    %h2
+                      favourite
+                      %span Book
+                    %h2
+                      from
+                      %span Here
+                    %a.shopbtn{href: "#"} shop now
+        / End Single Slide
+        / Start Single Slide
+        .slide.animation__style10.bg-image--7.fullscreen.align__center--left
+          .container
+            .row
+              .col-lg-12
+                .slider__content
+                  .contentbox
+                    %h2
+                      Buy
+                      %span your
+                    %h2
+                      favourite
+                      %span Book
+                    %h2
+                      from
+                      %span Here
+                    %a.shopbtn{href: "#"} shop now
+        / End Single Slide
+      / End Slider area
+      / Start BEst Seller Area
+      %section.wn__product__area.brown--color.pt--80.pb--30
+        .container
+          .row
+            .col-lg-12
+              .section__title.text-center
+                %h2.title__be--2
+                  New
+                  %span.color--theme Products
+                %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form
+          / Start Single Tab Content
+          .furniture--4.border--round.arrows_style.owl-carousel.owl-theme.row.mt--50
+            / Start Single Product
+            .product.product__style--3
+              .col-lg-3.col-md-4.col-sm-6.col-12
+                .product__thumb
+                  %a.first__img{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/1.jpg"}/
+                  %a.second__img.animation1{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                  .hot__box
+                    %span.hot-label BEST SALLER
+                .product__content.content--center
+                  %h4
+                    %a{href: "single_product"} robin parrish
+                  %ul.prize.d-flex
+                    %li $35.00
+                    %li.old_prize $35.00
+                  .action
+                    .actions_inner
+                      %ul.add_to_links
+                        %li
+                          %a.cart{href: "cart"}
+                            %i.bi.bi-shopping-bag4
+                        %li
+                          %a.wishlist{href: "wishlist"}
+                            %i.bi.bi-shopping-cart-full
+                        %li
+                          %a.compare{href: "#"}
+                            %i.bi.bi-heart-beat
+                        %li
+                          %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                            %i.bi.bi-search
+                  .product__hover--content
+                    %ul.rating.d-flex
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+            / Start Single Product
+            / Start Single Product
+            .product.product__style--3
+              .col-lg-3.col-md-4.col-sm-6.col-12
+                .product__thumb
+                  %a.first__img{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                  %a.second__img.animation1{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                  .hot__box.color--2
+                    %span.hot-label HOT
+                .product__content.content--center
+                  %h4
+                    %a{href: "single_product"} The Remainng
+                  %ul.prize.d-flex
+                    %li $35.00
+                    %li.old_prize $35.00
+                  .action
+                    .actions_inner
+                      %ul.add_to_links
+                        %li
+                          %a.cart{href: "cart"}
+                            %i.bi.bi-shopping-bag4
+                        %li
+                          %a.wishlist{href: "wishlist"}
+                            %i.bi.bi-shopping-cart-full
+                        %li
+                          %a.compare{href: "#"}
+                            %i.bi.bi-heart-beat
+                        %li
+                          %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                            %i.bi.bi-search
+                  .product__hover--content
+                    %ul.rating.d-flex
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+            / Start Single Product
+            / Start Single Product
+            .product.product__style--3
+              .col-lg-3.col-md-4.col-sm-6.col-12
+                .product__thumb
+                  %a.first__img{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/5.jpg"}/
+                  %a.second__img.animation1{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                  .hot__box
+                    %span.hot-label BEST SALLER
+                .product__content.content--center
+                  %h4
+                    %a{href: "single_product"} Bowen Greenwood
+                  %ul.prize.d-flex
+                    %li $40.00
+                    %li.old_prize $35.00
+                  .action
+                    .actions_inner
+                      %ul.add_to_links
+                        %li
+                          %a.cart{href: "cart"}
+                            %i.bi.bi-shopping-bag4
+                        %li
+                          %a.wishlist{href: "wishlist"}
+                            %i.bi.bi-shopping-cart-full
+                        %li
+                          %a.compare{href: "#"}
+                            %i.bi.bi-heart-beat
+                        %li
+                          %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                            %i.bi.bi-search
+                  .product__hover--content
+                    %ul.rating.d-flex
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+            / Start Single Product
+            / Start Single Product
+            .product.product__style--3
+              .col-lg-3.col-md-4.col-sm-6.col-12
+                .product__thumb
+                  %a.first__img{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/7.jpg"}/
+                  %a.second__img.animation1{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/8.jpg"}/
+                  .hot__box
+                    %span.hot-label HOT
+                .product__content.content--center
+                  %h4
+                    %a{href: "single_product"} Lando
+                  %ul.prize.d-flex
+                    %li $35.00
+                    %li.old_prize $50.00
+                  .action
+                    .actions_inner
+                      %ul.add_to_links
+                        %li
+                          %a.cart{href: "cart"}
+                            %i.bi.bi-shopping-bag4
+                        %li
+                          %a.wishlist{href: "wishlist"}
+                            %i.bi.bi-shopping-cart-full
+                        %li
+                          %a.compare{href: "#"}
+                            %i.bi.bi-heart-beat
+                        %li
+                          %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                            %i.bi.bi-search
+                  .product__hover--content
+                    %ul.rating.d-flex
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+            / Start Single Product
+            / Start Single Product
+            .product.product__style--3
+              .col-lg-3.col-md-4.col-sm-6.col-12
+                .product__thumb
+                  %a.first__img{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                  %a.second__img.animation1{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/10.jpg"}/
+                  .hot__box
+                    %span.hot-label HOT
+                .product__content.content--center
+                  %h4
+                    %a{href: "single_product"} Doctor Wldo
+                  %ul.prize.d-flex
+                    %li $35.00
+                    %li.old_prize $35.00
+                  .action
+                    .actions_inner
+                      %ul.add_to_links
+                        %li
+                          %a.cart{href: "cart"}
+                            %i.bi.bi-shopping-bag4
+                        %li
+                          %a.wishlist{href: "wishlist"}
+                            %i.bi.bi-shopping-cart-full
+                        %li
+                          %a.compare{href: "#"}
+                            %i.bi.bi-heart-beat
+                        %li
+                          %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                            %i.bi.bi-search
+                  .product__hover--content
+                    %ul.rating.d-flex
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+            / Start Single Product
+            / Start Single Product
+            .product.product__style--3
+              .col-lg-3.col-md-4.col-sm-6.col-12
+                .product__thumb
+                  %a.first__img{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/11.jpg"}/
+                  %a.second__img.animation1{href: "single_product"}
+                    %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                  .hot__box
+                    %span.hot-label BEST SALER
+                .product__content.content--center.content--center
+                  %h4
+                    %a{href: "single_product"} Ghost
+                  %ul.prize.d-flex
+                    %li $50.00
+                    %li.old_prize $35.00
+                  .action
+                    .actions_inner
+                      %ul.add_to_links
+                        %li
+                          %a.cart{href: "cart"}
+                            %i.bi.bi-shopping-bag4
+                        %li
+                          %a.wishlist{href: "wishlist"}
+                            %i.bi.bi-shopping-cart-full
+                        %li
+                          %a.compare{href: "#"}
+                            %i.bi.bi-heart-beat
+                        %li
+                          %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                            %i.bi.bi-search
+                  .product__hover--content
+                    %ul.rating.d-flex
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li.on
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+                      %li
+                        %i.fa.fa-star-o
+              / Start Single Product
+          / End Single Tab Content
+      / Start BEst Seller Area
+      / Start NEwsletter Area
+      %section.wn__newsletter__area.bg-image--2
+        .container
+          .row
+            .col-lg-7.offset-lg-5.col-md-12.col-12.ptb--150
+              .section__title.text-center
+                %h2 Stay With Us
+              .newsletter__block.text-center
+                %p Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers.
+                %form{action: "#"}
+                  .newsletter__box
+                    %input{placeholder: "Enter your e-mail", type: "email"}/
+                    %button Subscribe
+      / End NEwsletter Area
+      / Start Best Seller Area
+      %section.wn__bestseller__area.bg--white.pt--80.pb--30
+        .container
+          .row
+            .col-lg-12
+              .section__title.text-center
+                %h2.title__be--2
+                  All
+                  %span.color--theme Products
+                %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form
+          .row.mt--50
+            .col-md-12.col-lg-12.col-sm-12
+              .product__nav.nav.justify-content-center{role: "tablist"}
+                %a.nav-item.nav-link.active{"data-toggle" => "tab", href: "#nav-all", role: "tab"} ALL
+                %a.nav-item.nav-link{"data-toggle" => "tab", href: "#nav-biographic", role: "tab"} BIOGRAPHIC
+                %a.nav-item.nav-link{"data-toggle" => "tab", href: "#nav-adventure", role: "tab"} ADVENTURE
+                %a.nav-item.nav-link{"data-toggle" => "tab", href: "#nav-children", role: "tab"} CHILDREN
+                %a.nav-item.nav-link{"data-toggle" => "tab", href: "#nav-cook", role: "tab"} COOK
+          .tab__container.mt--60
+            / Start Single Tab Content
+            #nav-all.row.single__tab.tab-pane.fade.show.active{role: "tabpanel"}
+              .product__indicator--4.arrows_style.owl-carousel.owl-theme
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/1.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALER
+                      .product__content.content--center.content--center
+                        %h4
+                          %a{href: "single_product"} Ghost
+                        %ul.prize.d-flex
+                          %li $50.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALER
+                      .product__content.content--center.content--center
+                        %h4
+                          %a{href: "single_product"} Ghost
+                        %ul.prize.d-flex
+                          %li $50.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/5.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                        .hot__box
+                          %span.hot-label HOT
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Doctor Wldo
+                        %ul.prize.d-flex
+                          %li $35.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/7.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/8.jpg"}/
+                        .hot__box
+                          %span.hot-label HOT
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Doctor Wldo
+                        %ul.prize.d-flex
+                          %li $35.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/7.jpg"}/
+                        .hot__box
+                          %span.hot-label HOT
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Lando
+                        %ul.prize.d-flex
+                          %li $35.00
+                          %li.old_prize $50.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/11.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/5.jpg"}/
+                        .hot__box
+                          %span.hot-label HOT
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Lando
+                        %ul.prize.d-flex
+                          %li $35.00
+                          %li.old_prize $50.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/8.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/12.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/7.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/5.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/7.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+            / End Single Tab Content
+            / Start Single Tab Content
+            #nav-biographic.row.single__tab.tab-pane.fade{role: "tabpanel"}
+              .product__indicator--4.arrows_style.owl-carousel.owl-theme
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/1.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/10.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/8.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/5.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/1.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/11.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/12.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/8.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/5.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+            / End Single Tab Content
+            / Start Single Tab Content
+            #nav-adventure.row.single__tab.tab-pane.fade{role: "tabpanel"}
+              .product__indicator--4.arrows_style.owl-carousel.owl-theme
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/8.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/12.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/11.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/1.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/5.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/11.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/10.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/1.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/7.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/10.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+            / End Single Tab Content
+            / Start Single Tab Content
+            #nav-children.row.single__tab.tab-pane.fade{role: "tabpanel"}
+              .product__indicator--4.arrows_style.owl-carousel.owl-theme
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/1.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/10.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/12.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/7.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/5.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/12.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/8.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/1.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/7.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+            / End Single Tab Content
+            / Start Single Tab Content
+            #nav-cook.row.single__tab.tab-pane.fade{role: "tabpanel"}
+              .product__indicator--4.arrows_style.owl-carousel.owl-theme
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/10.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/8.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/7.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/9.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/7.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/4.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                .single__product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/8.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/3.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+                  / Start Single Product
+                  .col-lg-3.col-md-4.col-sm-6.col-12
+                    .product.product__style--3
+                      .product__thumb
+                        %a.first__img{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/2.jpg"}/
+                        %a.second__img.animation1{href: "single_product"}
+                          %img{alt: "product image", src: "/assets/images/books/6.jpg"}/
+                        .hot__box
+                          %span.hot-label BEST SALLER
+                      .product__content.content--center
+                        %h4
+                          %a{href: "single_product"} Bowen Greenwood
+                        %ul.prize.d-flex
+                          %li $40.00
+                          %li.old_prize $35.00
+                        .action
+                          .actions_inner
+                            %ul.add_to_links
+                              %li
+                                %a.cart{href: "cart"}
+                                  %i.bi.bi-shopping-bag4
+                              %li
+                                %a.wishlist{href: "wishlist"}
+                                  %i.bi.bi-shopping-cart-full
+                              %li
+                                %a.compare{href: "#"}
+                                  %i.bi.bi-heart-beat
+                              %li
+                                %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                                  %i.bi.bi-search
+                        .product__hover--content
+                          %ul.rating.d-flex
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li.on
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                            %li
+                              %i.fa.fa-star-o
+                  / Start Single Product
+            / End Single Tab Content
+      / Start BEst Seller Area
+      / Start Recent Post Area
+      %section.wn__recent__post.bg--gray.ptb--80
+        .container
+          .row
+            .col-lg-12
+              .section__title.text-center
+                %h2.title__be--2
+                  Our
+                  %span.color--theme Blog
+                %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form
+          .row.mt--50
+            .col-md-6.col-lg-4.col-sm-12
+              .post__itam
+                .content
+                  %h3
+                    %a{href: "blog_details"} International activities of the Frankfurt Book
+                  %p We are proud to announce the very first the edition of the frankfurt news.We are proud to announce the very first of  edition of the fault frankfurt news for us.
+                  .post__time
+                    %span.day Dec 06, 18
+                    .post-meta
+                      %ul
+                        %li
+                          %a{href: "#"}
+                            %i.bi.bi-love>
+                            72
+                        %li
+                          %a{href: "#"}
+                            %i.bi.bi-chat-bubble>
+                            27
+            .col-md-6.col-lg-4.col-sm-12
+              .post__itam
+                .content
+                  %h3
+                    %a{href: "blog_details"} Reading has a signficant info  number of benefits
+                  %p Find all the information you need to ensure your experience.Find all the information you need to ensure your experience . Find all the information you of.
+                  .post__time
+                    %span.day Mar 08, 18
+                    .post-meta
+                      %ul
+                        %li
+                          %a{href: "#"}
+                            %i.bi.bi-love>
+                            72
+                        %li
+                          %a{href: "#"}
+                            %i.bi.bi-chat-bubble>
+                            27
+            .col-md-6.col-lg-4.col-sm-12
+              .post__itam
+                .content
+                  %h3
+                    %a{href: "blog_details"} The London Book Fair is to be packed with exciting
+                  %p The London Book Fair is the global area inon marketplace for rights negotiation.The year  London Book Fair is the global area inon forg marketplace for rights.
+                  .post__time
+                    %span.day Nov 11, 18
+                    .post-meta
+                      %ul
+                        %li
+                          %a{href: "#"}
+                            %i.bi.bi-love>
+                            72
+                        %li
+                          %a{href: "#"}
+                            %i.bi.bi-chat-bubble>
+                            27
+      / End Recent Post Area
+      / Best Sale Area
+      %section.best-seel-area.pt--80.pb--60
+        .container
+          .row
+            .col-lg-12
+              .section__title.text-center.pb--50
+                %h2.title__be--2
+                  Best
+                  %span.color--theme Seller
+                %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form
+        .slider.center
+          / Single product start
+          .product.product__style--3
+            .product__thumb
+              %a.first__img{href: "single_product"}
+                %img{alt: "product image", src: "/assets/images/best-sell-product/1.jpg"}/
+            .product__content.content--center
+              .action
+                .actions_inner
+                  %ul.add_to_links
+                    %li
+                      %a.cart{href: "cart"}
+                        %i.bi.bi-shopping-bag4
+                    %li
+                      %a.wishlist{href: "wishlist"}
+                        %i.bi.bi-shopping-cart-full
+                    %li
+                      %a.compare{href: "#"}
+                        %i.bi.bi-heart-beat
+                    %li
+                      %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                        %i.bi.bi-search
+              .product__hover--content
+                %ul.rating.d-flex
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+          / Single product end
+          / Single product start
+          .product.product__style--3
+            .product__thumb
+              %a.first__img{href: "single_product"}
+                %img{alt: "product image", src: "/assets/images/best-sell-product/2.jpg"}/
+            .product__content.content--center
+              .action
+                .actions_inner
+                  %ul.add_to_links
+                    %li
+                      %a.cart{href: "cart"}
+                        %i.bi.bi-shopping-bag4
+                    %li
+                      %a.wishlist{href: "wishlist"}
+                        %i.bi.bi-shopping-cart-full
+                    %li
+                      %a.compare{href: "#"}
+                        %i.bi.bi-heart-beat
+                    %li
+                      %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                        %i.bi.bi-search
+              .product__hover--content
+                %ul.rating.d-flex
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+          / Single product end
+          / Single product start
+          .product.product__style--3
+            .product__thumb
+              %a.first__img{href: "single_product"}
+                %img{alt: "product image", src: "/assets/images/best-sell-product/3.jpg"}/
+            .product__content.content--center
+              .action
+                .actions_inner
+                  %ul.add_to_links
+                    %li
+                      %a.cart{href: "cart"}
+                        %i.bi.bi-shopping-bag4
+                    %li
+                      %a.wishlist{href: "wishlist"}
+                        %i.bi.bi-shopping-cart-full
+                    %li
+                      %a.compare{href: "#"}
+                        %i.bi.bi-heart-beat
+                    %li
+                      %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                        %i.bi.bi-search
+              .product__hover--content
+                %ul.rating.d-flex
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+          / Single product end
+          / Single product start
+          .product.product__style--3
+            .product__thumb
+              %a.first__img{href: "single_product"}
+                %img{alt: "product image", src: "/assets/images/best-sell-product/4.jpg"}/
+            .product__content.content--center
+              .action
+                .actions_inner
+                  %ul.add_to_links
+                    %li
+                      %a.cart{href: "cart"}
+                        %i.bi.bi-shopping-bag4
+                    %li
+                      %a.wishlist{href: "wishlist"}
+                        %i.bi.bi-shopping-cart-full
+                    %li
+                      %a.compare{href: "#"}
+                        %i.bi.bi-heart-beat
+                    %li
+                      %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                        %i.bi.bi-search
+              .product__hover--content
+                %ul.rating.d-flex
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+          / Single product end
+          / Single product start
+          .product.product__style--3
+            .product__thumb
+              %a.first__img{href: "single_product"}
+                %img{alt: "product image", src: "/assets/images/best-sell-product/5.jpg"}/
+            .product__content.content--center
+              .action
+                .actions_inner
+                  %ul.add_to_links
+                    %li
+                      %a.cart{href: "cart"}
+                        %i.bi.bi-shopping-bag4
+                    %li
+                      %a.wishlist{href: "wishlist"}
+                        %i.bi.bi-shopping-cart-full
+                    %li
+                      %a.compare{href: "#"}
+                        %i.bi.bi-heart-beat
+                    %li
+                      %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                        %i.bi.bi-search
+              .product__hover--content
+                %ul.rating.d-flex
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+          / Single product end
+          / Single product start
+          .product.product__style--3
+            .product__thumb
+              %a.first__img{href: "single_product"}
+                %img{alt: "product image", src: "/assets/images/best-sell-product/6.jpg"}/
+            .product__content.content--center
+              .action
+                .actions_inner
+                  %ul.add_to_links
+                    %li
+                      %a.cart{href: "cart"}
+                        %i.bi.bi-shopping-bag4
+                    %li
+                      %a.wishlist{href: "wishlist"}
+                        %i.bi.bi-shopping-cart-full
+                    %li
+                      %a.compare{href: "#"}
+                        %i.bi.bi-heart-beat
+                    %li
+                      %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                        %i.bi.bi-search
+              .product__hover--content
+                %ul.rating.d-flex
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+          / Single product end
+          / Single product start
+          .product.product__style--3
+            .product__thumb
+              %a.first__img{href: "single_product"}
+                %img{alt: "product image", src: "/assets/images/best-sell-product/7.jpg"}/
+            .product__content.content--center
+              .action
+                .actions_inner
+                  %ul.add_to_links
+                    %li
+                      %a.cart{href: "cart"}
+                        %i.bi.bi-shopping-bag4
+                    %li
+                      %a.wishlist{href: "wishlist"}
+                        %i.bi.bi-shopping-cart-full
+                    %li
+                      %a.compare{href: "#"}
+                        %i.bi.bi-heart-beat
+                    %li
+                      %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                        %i.bi.bi-search
+              .product__hover--content
+                %ul.rating.d-flex
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+          / Single product end
+          / Single product start
+          .product.product__style--3
+            .product__thumb
+              %a.first__img{href: "single_product"}
+                %img{alt: "product image", src: "/assets/images/best-sell-product/8.jpg"}/
+            .product__content.content--center
+              .action
+                .actions_inner
+                  %ul.add_to_links
+                    %li
+                      %a.cart{href: "cart"}
+                        %i.bi.bi-shopping-bag4
+                    %li
+                      %a.wishlist{href: "wishlist"}
+                        %i.bi.bi-shopping-cart-full
+                    %li
+                      %a.compare{href: "#"}
+                        %i.bi.bi-heart-beat
+                    %li
+                      %a.quickview.modal-view.detail-link{"data-toggle" => "modal", href: "#productmodal", title: "Quick View"}
+                        %i.bi.bi-search
+              .product__hover--content
+                %ul.rating.d-flex
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li.on
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+                  %li
+                    %i.fa.fa-star-o
+          / Single product end
+      / Best Sale Area Area
+      / Footer Area
+      %footer#wn__footer.footer__area.bg__cat--8.brown--color
+        .footer-static-top
+          .container
+            .row
+              .col-lg-12
+                .footer__widget.footer__menu
+                  .ft__logo
+                    %a{href: "index"}
+                      %img{alt: "logo", src: "/assets/images/logo/3.png"}/
+                    %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered duskam alteration variations of passages
+                  .footer__content
+                    %ul.social__net.social__net--2.d-flex.justify-content-center
+                      %li
+                        %a{href: "#"}
+                          %i.bi.bi-facebook
+                      %li
+                        %a{href: "#"}
+                          %i.bi.bi-google
+                      %li
+                        %a{href: "#"}
+                          %i.bi.bi-twitter
+                      %li
+                        %a{href: "#"}
+                          %i.bi.bi-linkedin
+                      %li
+                        %a{href: "#"}
+                          %i.bi.bi-youtube
+                    %ul.mainmenu.d-flex.justify-content-center
+                      %li
+                        %a{href: "index"} Trending
+                      %li
+                        %a{href: "index"} Best Seller
+                      %li
+                        %a{href: "index"} All Product
+                      %li
+                        %a{href: "index"} Wishlist
+                      %li
+                        %a{href: "index"} Blog
+                      %li
+                        %a{href: "index"} Contact
+        .copyright__wrapper
+          .container
+            .row
+              .col-lg-6.col-md-6.col-sm-12
+                .copyright
+                  .copy__right__inner.text-left
+                    %p
+                      Copyright
+                      %i.fa.fa-copyright
+                      %a{href: "https://freethemescloud.com/"} Free themes Cloud.
+                      All Rights Reserved
+              .col-lg-6.col-md-6.col-sm-12
+                .payment.text-right
+                  %img{alt: "", src: "/assets/images/icons/payment.png"}/
+      / //Footer Area
+      / QUICKVIEW PRODUCT
+      #quickview-wrapper
+        / Modal
+        #productmodal.modal.fade{role: "dialog", tabindex: "-1"}
+          .modal-dialog.modal__container{role: "document"}
+            .modal-content
+              .modal-header.modal__header
+                %button.close{"aria-label" => "Close", "data-dismiss" => "modal", type: "button"}
+                  %span{"aria-hidden" => "true"} ×
+              .modal-body
+                .modal-product
+                  / Start product images
+                  .product_images
+                    .main-image.images
+                      %img{alt: "big images", src: "/assets/images/product/big-img/1.jpg"}/
+                  / end product images
+                  .product_info
+                    %h1 Simple Fabric Bags
+                    .rating__and__review
+                      %ul.rating
+                        %li
+                          %span.ti-star
+                        %li
+                          %span.ti-star
+                        %li
+                          %span.ti-star
+                        %li
+                          %span.ti-star
+                        %li
+                          %span.ti-star
+                      .review
+                        %a{href: "#"} 4 customer reviews
+                    .price-box-3
+                      .s-price-box
+                        %span.new-price $17.20
+                        %span.old-price $45.00
+                    .quick-desc
+                      Designed for simplicity and made from high quality materials. Its sleek geometry and material combinations creates a modern look.
+                    .select__color
+                      %h2 Select color
+                      %ul.color__list
+                        %li.red
+                          %a{href: "#", title: "Red"} Red
+                        %li.gold
+                          %a{href: "#", title: "Gold"} Gold
+                        %li.orange
+                          %a{href: "#", title: "Orange"} Orange
+                        %li.orange
+                          %a{href: "#", title: "Orange"} Orange
+                    .select__size
+                      %h2 Select size
+                      %ul.color__list
+                        %li.l__size
+                          %a{href: "#", title: "L"} L
+                        %li.m__size
+                          %a{href: "#", title: "M"} M
+                        %li.s__size
+                          %a{href: "#", title: "S"} S
+                        %li.xl__size
+                          %a{href: "#", title: "XL"} XL
+                        %li.xxl__size
+                          %a{href: "#", title: "XXL"} XXL
+                    .social-sharing
+                      .widget.widget_socialsharing_widget
+                        %h3.widget-title-modal Share this product
+                        %ul.social__net.social__net--2.d-flex.justify-content-start
+                          %li.facebook
+                            %a.rss.social-icon{href: "#"}
+                              %i.zmdi.zmdi-rss
+                          %li.linkedin
+                            %a.linkedin.social-icon{href: "#"}
+                              %i.zmdi.zmdi-linkedin
+                          %li.pinterest
+                            %a.pinterest.social-icon{href: "#"}
+                              %i.zmdi.zmdi-pinterest
+                          %li.tumblr
+                            %a.tumblr.social-icon{href: "#"}
+                              %i.zmdi.zmdi-tumblr
+                    .addtocart-btn
+                      %a{href: "#"} Add to cart
+      / END QUICKVIEW PRODUCT
+    / //Main wrapper
+    / JS Files
+    %script{src: "/assets/js/vendor/jquery-3.2.1.min.js"}
+    %script{src: "/assets/js/popper.min.js"}
+    %script{src: "/assets/js/bootstrap.min.js"}
+    %script{src: "/assets/js/plugins.js"}
+    %script{src: "/assets/js/active.js"}
