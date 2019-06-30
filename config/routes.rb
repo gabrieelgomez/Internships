@@ -198,4 +198,7 @@ Rails.application.routes.draw do
 
   # Ckeditor routes engine
   mount Ckeditor::Engine => '/ckeditor'
+
+  # Shop routes engine
+  mount KepplerShop::Engine, at: '/', as: 'shop'
 end

@@ -1,0 +1,14 @@
+modules:
+  products:
+    name: Product
+    model: KepplerShopProduct
+    actions: [
+      'index', 'create', 'update', 'destroy', 'download', 'upload', 'clone'
+    ]
+
+  shippings:
+    name: Shipping
+    model: KepplerShopShipping
+    actions: [
+      'index', 'create', 'update', 'destroy', 'download', 'upload', 'clone'
+    ]

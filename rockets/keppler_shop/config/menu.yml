@@ -1,0 +1,30 @@
+menu:
+  keppler_shop:
+    name: Keppler Shop
+    current: ['/']
+    url_path: /
+    icon: rocket
+    model: User
+    environment: all
+    position: 4
+    submenu:
+      - product:
+          name: product
+          url_path: /admin/shop/products
+          icon: layers
+          current: ['/admin/shop/products']
+          model: KepplerShop::Product
+
+      - shipping:
+          name: shipping
+          url_path: /admin/shop/shippings
+          icon: layers
+          current: ['/admin/shop/shippings']
+          model: KepplerShop::Shipping
+
+      # - new:
+      #     name: + Add new module
+      #     url_path: /url_path
+      #     current: ['/current_path']
+      #     enviroment: development
+      #     model: User

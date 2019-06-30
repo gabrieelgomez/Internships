@@ -6,6 +6,7 @@ module KepplerFrontend
     layout 'layouts/keppler_frontend/app/layouts/application'
 
     def index
+      @products = KepplerShop::Product.all
     end
 
     def about

@@ -1,0 +1,26 @@
+en:
+  keppler:
+    sidebar-menu:
+      keppler-shop: Keppler shop
+      keppler-shop-submenu:
+        product: Product
+        shipping: Shipping
+    permissions:
+    models:
+      singularize:
+        product: product
+        shipping: shipping
+      pluralize:
+        products: products
+        shippings: shippings
+    modules:
+      admin/product: Product
+      admin/shipping: Shipping
+    messages:
+    actions:
+  activerecord:
+    attributes:
+    errors:
+      messages:
+  errors:
+  helpers:
