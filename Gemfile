@@ -16,6 +16,8 @@ gem 'vuejs-rails', '2.5.13' # VueJS library
 # gem 'sweet-alert2-rails'
 # gem 'sweetalert2'
 
+gem 'country_select'
+
 # Server
 gem 'puma', '~> 3.11', '>= 3.11.3'
 

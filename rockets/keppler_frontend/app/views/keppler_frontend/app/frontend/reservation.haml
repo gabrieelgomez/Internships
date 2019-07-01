@@ -376,66 +376,69 @@
           .row
             .col-lg-12
               .bradcaump__inner.text-center
-                %h2.bradcaump-title Contact Us
+                %h2.bradcaump-title Reservation
                 %nav.bradcaump-content
                   %a.breadcrumb_item{href: "/"} Home
                   %span.brd-separetor /
-                  %span.breadcrumb_item.active Contact Us
+                  %span.breadcrumb_item.active Reservation
       / End Bradcaump area
       / Start Contact Area
       %section.wn_contact_area.bg--white.pt--80.pb--80
-        .google__map.pb--80
+        = simple_form_for [:admin, :frontend, @reservation] do |f|
           .container
             .row
-              .col-md-12
-                #googleMap
-        .container
-          .row
-            .col-lg-8.col-12
-              .contact-form-wrap
-                %h2.contact__title Get in touch
-                %p Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-                %form#contact-form{action: "#", method: "post"}
-                  .single-contact-form.space-between
-                    %input{name: "firstname", placeholder: "First Name*", type: "text"}/
-                    %input{name: "lastname", placeholder: "Last Name*", type: "text"}/
-                  .single-contact-form.space-between
-                    %input{name: "email", placeholder: "Email*", type: "email"}/
-                    %input{name: "website", placeholder: "Website*", type: "text"}/
-                  .single-contact-form
-                    %input{name: "subject", placeholder: "Subject*", type: "text"}/
-                  .single-contact-form.message
-                    %textarea{name: "message", placeholder: "Type your message here.."}
-                  .contact-btn
-                    %button{type: "submit"} Send Email
-              .form-output
-                %p.form-messege
-            .col-lg-4.col-12.md-mt-40.sm-mt-40
-              .wn__address
-                %h2.contact__title Get office info.
-                %p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.
-                .wn__addres__wreapper
-                  .single__address
-                    %i.icon-location-pin.icons
-                    .content
-                      %span address:
-                      %p 666 5th Ave New York, NY, United
-                  .single__address
-                    %i.icon-phone.icons
-                    .content
-                      %span Phone Number:
-                      %p 716-298-1822
-                  .single__address
-                    %i.icon-envelope.icons
-                    .content
-                      %span Email address:
-                      %p 716-298-1822
-                  .single__address
-                    %i.icon-globe.icons
-                    .content
-                      %span website address:
-                      %p 716-298-1822
-      / End Contact Area
+              .col-lg-8.col-12
+                .contact-form-wrap
+                  %h2.contact__title= "Reservación -> #{@product.title}"
+                  %p= "Descripción -> #{raw @product.description}"
+                  .box-body
+                    %table.table.table-bordered
+                      %tbody
+                        .form-padding
+                          .col-xs-12
+                            = f.input :full_name, as: :string
+                          .col-xs-12
+                            = f.input :dni, as: :string
+                          .col-xs-12
+                            = f.input :email, as: :string
+                          .col-xs-12
+                            = f.input :phone, as: :string
+                          .col-xs-12
+                            = f.input :country, as: :string
+                          .col-xs-12
+                            = f.input :product_name, as: :hidden, value: @product.title
+                          .col-xs-12
+                            = f.association :product, include_blank: false
+                    .contact-btn
+                      %button{type: "submit"} Send Email
+                .form-output
+                  %p.form-messege
+              .col-lg-4.col-12.md-mt-40.sm-mt-40
+                .wn__address
+                  %h2.contact__title Get office info.
+                  %p Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.
+                  .wn__addres__wreapper
+                    .single__address
+                      %i.icon-location-pin.icons
+                      .content
+                        %span address:
+                        %p 666 5th Ave New York, NY, United
+                    .single__address
+                      %i.icon-phone.icons
+                      .content
+                        %span Phone Number:
+                        %p 716-298-1822
+                    .single__address
+                      %i.icon-envelope.icons
+                      .content
+                        %span Email address:
+                        %p 716-298-1822
+                    .single__address
+                      %i.icon-globe.icons
+                      .content
+                        %span website address:
+                        %p 716-298-1822
+        / End Contact Area
       / Footer Area
       %footer#wn__footer.footer__area.bg__cat--8.brown--color
         .footer-static-top
@@ -499,133 +502,3 @@
     %script{src: "/assets/js/bootstrap.min.js"}
     %script{src: "/assets/js/plugins.js"}
     / Google Map js
-    %script{src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"}
-    :javascript
-      // When the window has finished loading create our google map below
-      	        google.maps.event.addDomListener(window, 'load', init);
-
-      	        function init() {
-      	            // Basic options for a simple Google Map
-      	            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-      	            var mapOptions = {
-      	                // How zoomed in you want the map to start at (always required)
-      	                zoom: 12,
-
-      	                scrollwheel: false,
-
-      	                // The latitude and longitude to center the map (always required)
-      	                center: new google.maps.LatLng(23.7286, 90.3854), // New York
-
-      	                // How you would like to style the map.
-      	                // This is where you would paste any style found on Snazzy Maps.
-      	                 styles:
-      					[
-
-      					    {
-      					        "featureType": "administrative",
-      					        "elementType": "labels.text.fill",
-      					        "stylers": [
-      					            {
-      					                "color": "#444444"
-      					            }
-      					        ]
-      					    },
-      					    {
-      					        "featureType": "landscape",
-      					        "elementType": "all",
-      					        "stylers": [
-      					            {
-      					                "color": "#f2f2f2"
-      					            }
-      					        ]
-      					    },
-      					    {
-      					        "featureType": "poi",
-      					        "elementType": "all",
-      					        "stylers": [
-      					            {
-      					                "visibility": "off"
-      					            }
-      					        ]
-      					    },
-      					    {
-      					        "featureType": "road",
-      					        "elementType": "all",
-      					        "stylers": [
-      					            {
-      					                "saturation": -100
-      					            },
-      					            {
-      					                "lightness": 45
-      					            }
-      					        ]
-      					    },
-      					    {
-      					        "featureType": "road.highway",
-      					        "elementType": "all",
-      					        "stylers": [
-      					            {
-      					                "visibility": "simplified"
-      					            }
-      					        ]
-      					    },
-      					    {
-      					        "featureType": "road.arterial",
-      					        "elementType": "labels.icon",
-      					        "stylers": [
-      					            {
-      					                "visibility": "off"
-      					            }
-      					        ]
-      					    },
-      					    {
-      					        "featureType": "transit",
-      					        "elementType": "all",
-      					        "stylers": [
-      					            {
-      					                "visibility": "off"
-      					            }
-      					        ]
-      					    },
-      					    {
-      					        "featureType": "transit.station.bus",
-      					        "elementType": "labels.icon",
-      					        "stylers": [
-      					            {
-      					                "saturation": "-16"
-      					            }
-      					        ]
-      					    },
-      					    {
-      					        "featureType": "water",
-      					        "elementType": "all",
-      					        "stylers": [
-      					            {
-      					                "color": "#04b7ff"
-      					            },
-      					            {
-      					                "visibility": "on"
-      					            }
-      					        ]
-      					    }
-      					]
-      	            };
-
-      	            // Get the HTML DOM element that will contain your map
-      	            // We are using a div with id="map" seen below in the <body>
-      	            var mapElement = document.getElementById('googleMap');
-
-      	            // Create the Google Map using our element and options defined above
-      	            var map = new google.maps.Map(mapElement, mapOptions);
-
-      	            // Let's also add a marker while we're at it
-      	            var marker = new google.maps.Marker({
-      	                position: new google.maps.LatLng(23.7286, 90.3854),
-      	                map: map,
-      	                title: 'Dcare!',
-      	                icon: 'images/icons/map.png',
-      	                animation:google.maps.Animation.BOUNCE
-
-      	            });
-      	        }
-    %script{src: "/assets/js/active.js"}

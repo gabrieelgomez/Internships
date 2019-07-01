@@ -14,11 +14,24 @@ KepplerFrontend::Engine.routes.draw do
   get '/portfolio_details', to: 'app/frontend#portfolio_details'
   get '/shop_grid', to: 'app/frontend#shop_grid'
   get '/product/:product_id', to: 'app/frontend#product', as: :product_show
+  get '/reservation/:product_id', to: 'app/frontend#reservation', as: :reservation_product
   get '/team', to: 'app/frontend#team'
   get '/wishlist', to: 'app/frontend#wishlist'
 
+  root to: 'app/front#index'
+
+
   namespace :admin do
     scope :frontend, as: :frontend do
+      resources :reservations do
+        post '/sort', action: :sort, on: :collection
+        get '(page/:page)', action: :index, on: :collection, as: ''
+        get '/clone', action: 'clone'
+        post '/upload', action: 'upload', as: :upload
+        get '/reload', action: :reload, on: :collection
+        delete '/destroy_multiple', action: :destroy_multiple, on: :collection
+      end
+
       resources :themes do
         get '(page/:page)', action: :index, on: :collection, as: ''
         get '/clone', action: 'clone'

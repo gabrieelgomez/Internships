@@ -33,13 +33,13 @@
           .row
             .col-md-4.col-sm-4.col-7.col-lg-2
               .logo
-                %a{href: "index"}
+                %a{href: "/"}
                   %img{alt: "logo images", src: "/assets/images/logo/logo.png"}/
             .col-lg-8.d-none.d-lg-block
               %nav.mainmenu__nav
                 %ul.meninmenu.d-flex.justify-content-start
                   %li.drop.with--one--item
-                    %a{href: "index"} Home
+                    %a{href: "/"} Home
                   %li.drop
                     %a{href: "#"} Shop
                     .megamenu.mega03
@@ -54,9 +54,9 @@
                         %li
                           %a{href: "my-account"} My Account
                         %li
-                          %a{href: "cart"} Cart Page
+                          %a{href: "/cart"} Cart Page
                         %li
-                          %a{href: "checkout"} Checkout Page
+                          %a{href: "/checkout"} Checkout Page
                         %li
                           %a{href: "wishlist"} Wishlist Page
                         %li
@@ -157,9 +157,9 @@
                         %li
                           %a{href: "my-account"} My Account
                         %li
-                          %a{href: "cart"} Cart Page
+                          %a{href: "/cart"} Cart Page
                         %li
-                          %a{href: "checkout"} Checkout Page
+                          %a{href: "/checkout"} Checkout Page
                         %li
                           %a{href: "wishlist"} Wishlist Page
                         %li
@@ -177,7 +177,7 @@
                         %li
                           %a{href: "blog-details"} Blog Details
                   %li
-                    %a{href: "contact"} Contact
+                    %a{href: "/contact"} Contact
             .col-md-8.col-sm-8.col-5.col-lg-2
               %ul.header__sidebar__right.d-flex.justify-content-end.align-items-center
                 %li.shop_search
@@ -198,7 +198,7 @@
                       .total_amount.text-right
                         %span $66.00
                       .mini_action.checkout
-                        %a.checkout__btn{href: "cart"} Go to Checkout
+                        %a.checkout__btn{href: "/cart"} Go to Checkout
                       .single__items
                         .miniproduct
                           .item01.d-flex
@@ -253,7 +253,7 @@
                                     %a{href: "#"}
                                       %i.zmdi.zmdi-delete
                       .mini_action.cart
-                        %a.cart__btn{href: "cart"} View and edit cart
+                        %a.cart__btn{href: "/cart"} View and edit cart
                   / End Shopping Cart
                 %li.setting__bar__icon
                   %a.setting__active{href: "#"}
@@ -312,7 +312,7 @@
               %nav.mobilemenu__nav
                 %ul.meninmenu
                   %li
-                    %a{href: "index"} Home
+                    %a{href: "/"} Home
                   %li
                     %a{href: "#"} Pages
                     %ul
@@ -328,9 +328,9 @@
                       %li
                         %a{href: "my-account"} My Account
                       %li
-                        %a{href: "cart"} Cart Page
+                        %a{href: "/cart"} Cart Page
                       %li
-                        %a{href: "checkout"} Checkout Page
+                        %a{href: "/checkout"} Checkout Page
                       %li
                         %a{href: "wishlist"} Wishlist Page
                       %li
@@ -354,7 +354,7 @@
                       %li
                         %a{href: "blog-details"} Blog Details
                   %li
-                    %a{href: "contact"} Contact
+                    %a{href: "/contact"} Contact
           / End Mobile Menu
           .mobile-menu.d-block.d-lg-none
           / Mobile Menu
@@ -378,7 +378,7 @@
               .bradcaump__inner.text-center
                 %h2.bradcaump-title Shop Single
                 %nav.bradcaump-content
-                  %a.breadcrumb_item{href: "index"} Home
+                  %a.breadcrumb_item{href: "/"} Home
                   %span.brd-separetor /
                   %span.breadcrumb_item.active Shop Single
       / End Bradcaump area
@@ -392,25 +392,12 @@
                   .col-lg-6.col-12
                     .wn__fotorama__wrapper
                       .fotorama.wn__fotorama__action{"data-nav" => "thumbs"}
-                        %a{href: "1.jpg"}
-                          %img{alt: "", src: "/assets/images/product/1.jpg"}/
-                        %a{href: "2.jpg"}
-                          %img{alt: "", src: "/assets/images/product/2.jpg"}/
-                        %a{href: "3.jpg"}
-                          %img{alt: "", src: "/assets/images/product/3.jpg"}/
-                        %a{href: "4.jpg"}
-                          %img{alt: "", src: "/assets/images/product/4.jpg"}/
-                        %a{href: "5.jpg"}
-                          %img{alt: "", src: "/assets/images/product/5.jpg"}/
-                        %a{href: "6.jpg"}
-                          %img{alt: "", src: "/assets/images/product/6.jpg"}/
-                        %a{href: "7.jpg"}
-                          %img{alt: "", src: "/assets/images/product/7.jpg"}/
-                        %a{href: "8.jpg"}
-                          %img{alt: "", src: "/assets/images/product/8.jpg"}/
+                        - 10.times do
+                          %a{href: "1.jpg"}
+                            = image_tag @product.image.url
                   .col-lg-6.col-12
                     .product__info__main
-                      %h1 Chaz Kangeroo Hoodie
+                      %h1= @product.title
                       .product-reviews-summary.d-flex
                         %ul.rating-summary.d-flex
                           %li
@@ -424,7 +411,7 @@
                           %li.off
                             %i.zmdi.zmdi-star-outline
                       .price-box
-                        %span $52.00
+                        %span="$ #{@product.offer_price}"
                       .product__overview
                         %p Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.
                         %p Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear.
@@ -432,13 +419,13 @@
                         %span Qty
                         %input#qty.input-text.qty{min: "1", name: "qty", title: "Qty", type: "number", value: "1"}/
                         .addtocart__actions
-                          %button.tocart{title: "Pay Now", type: "submit"} Pay Now
+                          %a.tocart{title: "Pay Now", type: "submit", href: "/reservation/#{@product.id}"} Reserve
                         .product-addto-links.clearfix
                           %a.wishlist{href: "#"}
                           %a.compare{href: "#"}
 
                       .box-tocart.d-flex
-                        %a{href: 'http://paypal.com/cgi-bin/webscr?amount=85.99&business=gagg1707_vendedor_seller%40gmail.com&cmd=_xclick&invoice=bmesai32&item_name=Nombre+del+curso&item_number=1&notify_url=http%3A%2Flocalhost%3A3000&quantity=1&return=http%3A%2Flocalhost%3A3000%2Fpayments%2F1%2Fpaypal%2Fbmesai32&upload=1', target: '_blank'}
+                        %a{href: "http://paypal.com/cgi-bin/webscr?amount=#{@product.offer_price}&business=gagg1707_vendedor_seller%40gmail.com&cmd=_xclick&invoice=bmesai32&item_name=Nombre+del+curso&item_number=1&notify_url=http%3A%2Flocalhost%3A3000&quantity=1&return=http%3A%2Flocalhost%3A3000%2Fpayments%2F1%2Fpaypal%2Fbmesai32&upload=1", target: '_blank'}
                           %img{alt: "product image", src: "/assets/images/paypalbtn.png"}/
                         %br
                         %form{action: "/your-server-side-code", method: "POST"}
@@ -616,7 +603,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -659,7 +646,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -702,7 +689,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -745,7 +732,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -788,7 +775,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -831,7 +818,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -879,7 +866,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -922,7 +909,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -965,7 +952,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -1008,7 +995,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -1051,7 +1038,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -1094,7 +1081,7 @@
                           .actions_inner
                             %ul.add_to_links
                               %li
-                                %a.cart{href: "cart"}
+                                %a.cart{href: "/cart"}
                                   %i.bi.bi-shopping-bag4
                               %li
                                 %a.wishlist{href: "wishlist"}
@@ -1270,7 +1257,7 @@
               .col-lg-12
                 .footer__widget.footer__menu
                   .ft__logo
-                    %a{href: "index"}
+                    %a{href: "/"}
                       %img{alt: "logo", src: "/assets/images/logo/3.png"}/
                     %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered duskam alteration variations of passages
                   .footer__content
@@ -1292,17 +1279,17 @@
                           %i.bi.bi-youtube
                     %ul.mainmenu.d-flex.justify-content-center
                       %li
-                        %a{href: "index"} Trending
+                        %a{href: "/"} Trending
                       %li
-                        %a{href: "index"} Best Seller
+                        %a{href: "/"} Best Seller
                       %li
-                        %a{href: "index"} All Product
+                        %a{href: "/"} All Product
                       %li
-                        %a{href: "index"} Wishlist
+                        %a{href: "/"} Wishlist
                       %li
-                        %a{href: "index"} Blog
+                        %a{href: "/"} Blog
                       %li
-                        %a{href: "index"} Contact
+                        %a{href: "/"} Contact
         .copyright__wrapper
           .container
             .row

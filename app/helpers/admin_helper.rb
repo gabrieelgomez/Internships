@@ -27,6 +27,7 @@ module AdminHelper
 
   # Classify a model from a controller
   def model
+    return if controller_path == "keppler_frontend/admin/reservations"
     controller_path
       .remove('app/').remove('admin/')
       .classify.constantize

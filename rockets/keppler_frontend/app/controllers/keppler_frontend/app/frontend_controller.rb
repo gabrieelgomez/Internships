@@ -4,6 +4,7 @@ module KepplerFrontend
   class App::FrontendController < App::AppController
     include FrontsHelper
     layout 'layouts/keppler_frontend/app/layouts/application'
+    before_action :set_product, only: %i[product reservation]
 
     def index
       @products = KepplerShop::Product.all
@@ -45,14 +46,23 @@ module KepplerFrontend
     def shop_grid
     end
 
-    def single_product
-      @product = Product.find_by params[:product_id]
+    def product; end
+
+    def reservation
+      @reservation = KepplerShop::Reservation.new
     end
 
     def team
     end
 
     def wishlist
+    end
+
+
+    private
+
+    def set_product
+      @product = KepplerShop::Product.find_by id: params[:product_id]
     end
 
   end
