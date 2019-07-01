@@ -1,22 +1,20 @@
 # frozen_string_literal: true
 
 module KepplerShop
-  # Product Model
-  class Product < ApplicationRecord
+  # Reservation Model
+  class Reservation < ApplicationRecord
     include ActivityHistory
     include CloneRecord
     include Uploadable
     include Downloadable
     include Sortable
     include Searchable
-    mount_uploader :image, AttachmentUploader
-    mount_uploaders :files, AttachmentUploader
+    belongs_to :product
     acts_as_list
     acts_as_paranoid
-    has_many :reservations
 
     def self.index_attributes
-      %i[image title subtitle]
+      %i[full_name dni email phone country product_name]
     end
   end
 end

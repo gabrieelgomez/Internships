@@ -11,6 +11,7 @@ module KepplerShop
     include Searchable
     acts_as_list
     acts_as_paranoid
+    has_many :reservations
 
     def self.index_attributes
       %i[company_name sucursal_name]

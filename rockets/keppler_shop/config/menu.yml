@@ -8,6 +8,13 @@ menu:
     environment: all
     position: 4
     submenu:
+      - reservation:
+          name: reservation
+          url_path: /admin/shop/reservations
+          icon: layers
+          current: ['/admin/shop/reservations']
+          model: KepplerShop::Reservation
+
       - product:
           name: product
           url_path: /admin/shop/products

@@ -3,17 +3,21 @@ es:
     sidebar-menu:
       keppler-shop: Keppler shop
       keppler-shop-submenu:
+        reservation: Reservation
         product: Product
         shipping: Shipping
     permissions:
     models:
       singularize:
+        reservation: reservation
         product: product
         shipping: shipping
       pluralize:
+        reservations: reservations
         products: products
         shippings: shippings
     modules:
+      admin/reservation: Reservation
       admin/product: Product
       admin/shipping: Shipping
     messages:

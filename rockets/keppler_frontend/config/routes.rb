@@ -13,7 +13,7 @@ KepplerFrontend::Engine.routes.draw do
   get '/portfolio', to: 'app/frontend#portfolio'
   get '/portfolio_details', to: 'app/frontend#portfolio_details'
   get '/shop_grid', to: 'app/frontend#shop_grid'
-  get '/single_product', to: 'app/frontend#single_product'
+  get '/product/:product_id', to: 'app/frontend#product', as: :product_show
   get '/team', to: 'app/frontend#team'
   get '/wishlist', to: 'app/frontend#wishlist'
 
