@@ -428,8 +428,8 @@
                         %a{href: "http://paypal.com/cgi-bin/webscr?amount=#{@product.offer_price}&business=gagg1707_vendedor_seller%40gmail.com&cmd=_xclick&invoice=bmesai32&item_name=Nombre+del+curso&item_number=1&notify_url=http%3A%2Flocalhost%3A3000&quantity=1&return=http%3A%2Flocalhost%3A3000%2Fpayments%2F1%2Fpaypal%2Fbmesai32&upload=1", target: '_blank'}
                           %img{alt: "product image", src: "/assets/images/paypalbtn.png"}/
                         %br
-                        %form{action: "/your-server-side-code", method: "POST"}
-                          %script.stripe-button{"data-amount" => "#{100 * 100}", "data-description" => "Producto de Prueba", "data-image" => "https://stripe.com/img/documentation/checkout/marketplace.png", "data-key" => "pk_test_3UFEcpinON2UAw8wcl1LeMYV", "data-locale" => "auto", "data-name" => "CEGO", :src => "https://checkout.stripe.com/checkout.js"}
+                        %form{action: "/", method: "GET"}
+                          %script.stripe-button{"data-amount" => "#{100 * 100}", "data-description" => "#{@product.title}", "data-image" => "https://stripe.com/img/documentation/checkout/marketplace.png", "data-key" => "pk_test_3UFEcpinON2UAw8wcl1LeMYV", "data-locale" => "auto", "data-name" => "Bookstor", :src => "https://checkout.stripe.com/checkout.js"}
                           :javascript
                             // Hide default stripe button, be careful there if you
                             // have more than 1 button of that class

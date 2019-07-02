@@ -57,6 +57,9 @@
                       %th
                         = sort_link(@q, attribute) do
                           = t("activerecord.attributes.#{attribute.to_s}")
+                      %th
+                        = sort_link(@q, attribute) do
+                          = "Shipping"
                     %th
                     %th
 

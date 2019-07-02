@@ -27,6 +27,10 @@
         %td
           = link_to({ action: :show, id: object.id, search: @query }, { class: 'show-row' }) do
             %span= object.try(attribute).try(:truncate_words, 4)
+      %td
+        = link_to({ action: :show, id: object.id, search: @query }, { class: 'show-row' }) do
+          %span= object.shipping&.company_name
+
 
     %td.dropdown{ style: 'width: 15px;padding-right:15px;' }
       %a.action-btn.pull-right{:id => "menu-#{object.id}", 'aria-expanded': 'false', 'aria-haspopup': 'true', 'data-toggle': 'dropdown' }

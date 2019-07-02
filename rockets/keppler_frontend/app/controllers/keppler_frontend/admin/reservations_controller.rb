@@ -94,7 +94,7 @@ module KepplerFrontend
       # Only allow a trusted parameter "white list" through.
       def reservation_params
         params.require(:reservation).permit(
-          :full_name, :dni, :email, :phone, :country, :product_name, :product_id
+          :full_name, :dni, :email, :phone, :country, :product_name, :product_id, :shipping_id
         )
       end
     end

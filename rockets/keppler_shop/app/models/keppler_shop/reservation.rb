@@ -10,6 +10,7 @@ module KepplerShop
     include Sortable
     include Searchable
     belongs_to :product
+    belongs_to :shipping
     acts_as_list
     acts_as_paranoid
 
