@@ -82,7 +82,7 @@ gem 'font-awesome-sass', '5.0.9'
 gem 'jquery-slick-rails', '1.9.0'
 
 # Authentication and Authorization
-gem 'devise', '4.4.3'
+gem 'devise', '4.7.1'
 gem 'devise-i18n', '1.6.1'
 gem 'pundit', '1.1.0'
 gem 'rolify', '5.2.0'
