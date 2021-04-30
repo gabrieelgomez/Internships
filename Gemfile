@@ -102,7 +102,7 @@ gem 'kaminari-i18n', '0.5.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 #javascript
-gem 'gon', '6.2.1'
+gem 'gon', '6.4.0'
 
 
 # Development
